@@ -4,7 +4,7 @@
 > (실제 상황에서는 DB에 이미 카운팅이 되어 있겠죠.)
 > 10,000 명 이상의 조회 수를 가진 강의자가 접속하면 ACC LOG 에 `total_view_for_famous_teacher`항목이 표시됩니다.
 
-> e.g.) 
+> e.g.) </br>
 > {"time": "17/May/2015:08:05:20 +0000", "remote_ip": "217.168.17.5", "remote_user": "-", "request": "GET /downloads/product_2 HTTP/1.1", "response": 200, "bytes": 3316, "referrer": "-", "agent": "-" , **"total_view_for_famous_teacher":50021**}
 
 
