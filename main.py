@@ -1,16 +1,5 @@
 import json
 
-
-'''
-1. 새로운 지표를 로그 파일에 추가한다. (가능하면 json 포맷)
-2. 지표가 추가된 로그 파일을 개발팀으로부터 받는다.
-3. 파이썬이나 리눅스 쉘을 사용하여 로그 파일에서 신규 지표 데이터값을 추출한다.
-4. 추출된 값이 MAU의 증가와 상관관계가 있는지 분석한다.
-5. 1~4번을 일정 기간동안 반복하면서 신규 지표를 모니터링한다.
-6. 모니터링한 결과, 유의미한 상관 관계가 있으면 이 지표 서비스 지표로 반영하기 위해 DB나 데이터 분석 시스템에 등록 요청을 한다.
-6-1. 모니터링 결과 의미가 없다면 지표를 폐기하고 인터뷰 프로세스를 개선한다.  
-'''
-
 def print_log_sample():
     raw_log_line = '{"time": "04/Jun/2015:06:06:24 +0000", "remote_ip": "192.235.75.62", "remote_user": "-", "request": "GET /downloads/product_1 HTTP/1.1", "response": 304, "bytes": 0, "referrer": "-", "agent": "Debian APT-HTTP/1.3 (0.8.16~exp12ubuntu10.12)"}'
     json_dict = json.loads(raw_log_line)
